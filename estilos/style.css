@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    color: #333;
+}
+
+.logoB{
+    height: 3em;
+    width: 3em;
+    margin-left: 0.5em;
+}
+
+.navbar-collapse{
+    flex-grow: initial;
+}
+
+.navbar-nav {
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40em;
+}
+
+.main-title{
+    color: #fff;
+    font-size: 5em;
+}
+
+.main-subtitle{
+    color: #fff;
+    font-size: 3em;
+}
+
+.main-botones{
+    display: flex;
+}
+
+.boton-producto{
+    padding: 0.3em 0.5em 0 0.5em;
+    margin: 0.3em;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5em;
+}
+
+.etiqueta-producto{
+    text-decoration: none;
+    color: #000;
+}
+
+.boton-contacto{
+    padding: 0.3em 0.5em 0 0.5em;
+    margin: 0.3em;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5em;
+} 
+
+.etiqueta-contacto{
+    text-decoration: none;
+    color: #000;
+}
+
+.container-titulo-carrusel{
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.container-carrusel{
+    padding: 2em;
+    margin-bottom: 9em;
+}
+
+.titulo-carrusel{
+    font-size: 2.5em;
+    padding: 1.5em;
+    color: #000;
+}
+
+.pie{
+	background-color: #333;
+	display: flex;
+	flex-direction: column;
+    margin-top: auto;
+}
+
+.pie h2{
+	color: #fff;
+    padding-top: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.pie ul{
+	color: #fff;
+	display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-bottom: 1.5em;
+}
+
+.pie a{
+	color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.main-qs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-qs{
+    font-size: 4em;
+    padding-top: 2em;
+    color: #fff;
+}
+
+.parrafo-qs{
+    text-align: center;
+    font-size: 2em;
+    padding: 2em;
+    color: #fff;
+}
+
+.rrss{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rrss h2{
+    color: #fff;
+}
+
+.rrss a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-form{
+    padding: 3em;
+}
+
+.titulo-prod{
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-prod h2{
+    color: #fff;
+    font-size: 5em;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
