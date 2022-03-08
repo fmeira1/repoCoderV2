@@ -38,11 +38,30 @@ body{
 .main-title{
     color: #fff;
     font-size: 5em;
+    animation-name: colorChangeTitle;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+}
+
+@keyframes colorChangeTitle{
+    from{
+        color: #000;
+    }
+    to{
+        color: #fff;
+    }
 }
 
 .main-subtitle{
-    color: #fff;
+    color: #000;
     font-size: 3em;
+}
+
+.main h2{
+    color:#fff;
+    transition-property: color;
+    transition-duration: 2s;
 }
 
 .main-botones{
@@ -83,13 +102,25 @@ body{
 
 .container-carrusel{
     padding: 2em;
-    margin-bottom: 9em;
 }
 
 .titulo-carrusel{
     font-size: 2.5em;
     padding: 1.5em;
     color: #000;
+    animation-name: breathCarrusel;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes breathCarrusel{
+    from{
+        color: #000;
+    }
+    to{
+        color: #fff;
+    }
 }
 
 .pie{
@@ -152,6 +183,7 @@ body{
 
 .rrss h2{
     color: #fff;
+    text-align: center;
 }
 
 .rrss a{
@@ -183,6 +215,23 @@ body{
 
 #titulo-galeria{
     color: #fff;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+}
+
+#titulo-galeria h1{
+    font-size: 4em;
+}
+
+@keyframes colorChange{
+    from{
+        color: #000;
+    }
+    to{
+        color: #fff;
+    }
 }
 
 #galeria .col-lg-4{
@@ -197,4 +246,10 @@ body{
 
 #galeria img:hover{
     border: 5px solid #000;
+}
+
+@media screen and (max-width: 990px){
+    .rrss{
+        flex-direction: column;
+    }
 }
