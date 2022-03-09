@@ -1,0 +1,212 @@
+@import "variables";
+
+@import "generales";
+
+@import "footer";
+
+@import "rrss";
+
+@import "contact-card";
+
+.logoB{
+    height: 3em;
+    width: 3em;
+    margin-left: 0.5em;
+}
+
+.navbar-collapse{
+    flex-grow: initial;
+}
+
+.navbar-nav {
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40em;
+}
+
+.main-title{
+    color: $blanco;
+    font-size: 5em;
+    animation-name: colorChangeTitle;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+}
+
+@keyframes colorChangeTitle{
+    from{
+        color: $negro;
+    }
+    to{
+        color: $blanco;
+    }
+}
+
+.main-subtitle{
+    color: $negro;
+    font-size: 3em;
+}
+
+.main h2{
+    color: $blanco;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.main-botones{
+    display: flex;
+}
+
+.boton-producto{
+    padding: 0.3em 0.5em 0 0.5em;
+    margin: 0.3em;
+    background-color: $blanco;
+    color: $negro;
+    border-radius: 0.5em;
+}
+
+.etiqueta-producto{
+    text-decoration: none;
+    color: $negro;
+}
+
+.container-cards .card{
+    background-color: $gris;
+}
+
+.card-body h2{
+    color: $blanco;
+}
+
+.card-text{
+    color: $blanco;
+}
+
+.boton-contacto{
+    padding: 0.3em 0.5em 0 0.5em;
+    margin: 0.3em;
+    background-color: $blanco;
+    color: $negro;
+    border-radius: 0.5em;
+} 
+
+.etiqueta-contacto{
+    text-decoration: none;
+    color: $negro;
+}
+
+.container-titulo-carrusel{
+    display: flex;
+    background-color: $blanco;
+    justify-content: center;
+}
+
+.container-carrusel{
+    padding: 2em;
+}
+
+.titulo-carrusel{
+    font-size: 2.5em;
+    padding: 1.5em;
+    color: $negro;
+    animation-name: breathCarrusel;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes breathCarrusel{
+    from{
+        color: $negro;
+    }
+    to{
+        color: $blanco;
+    }
+}
+
+.main-qs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-qs{
+    font-size: 4em;
+    padding-top: 2em;
+    color: $blanco;
+}
+
+.parrafo-qs{
+    text-align: center;
+    font-size: 2em;
+    padding: 2em;
+    color: $blanco;
+}
+
+.titulo-prod{
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-prod h2{
+    color: $blanco;
+    font-size: 5em;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-galeria{
+    color: $blanco;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+}
+
+#titulo-galeria h1{
+    font-size: 4em;
+}
+
+@keyframes colorChange{
+    from{
+        color: $negro;
+    }
+    to{
+        color: $blanco;
+    }
+}
+
+#galeria .col-lg-4{
+    margin-bottom: 2em;
+    padding: 2em;
+}
+
+#galeria img{
+    width: 100%;
+    height: 22.5em;
+}
+
+#galeria img:hover{
+    border: 5px solid $negro;
+}
+
+@media screen and (max-width: 990px){
+    .rrss{
+        flex-direction: column;
+    }
+}

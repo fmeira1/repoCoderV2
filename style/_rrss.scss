@@ -1,0 +1,13 @@
+.rrss{
+    padding-top: 3em;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+    background-color: $gris;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: $blanco;
+    }
+}

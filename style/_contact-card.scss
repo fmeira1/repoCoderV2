@@ -1,0 +1,12 @@
+.container-form{
+    padding: 3em;
+    .card{
+        background-color: $gris;
+        h4{
+            color: $blanco;
+        }
+        label{
+            color: $blanco;
+        }
+    }
+}
