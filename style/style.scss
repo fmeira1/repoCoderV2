@@ -8,9 +8,13 @@
 
 @import "contact-card";
 
+@mixin size ($height, $width){
+    height: $height;
+    width: $width;
+}
+
 .logoB{
-    height: 3em;
-    width: 3em;
+    @include size (3em, 3em);
     margin-left: 0.5em;
 }
 
@@ -33,7 +37,7 @@
 }
 
 .main-title{
-    color: $blanco;
+    color: map-get($map: $paleta, $key: 'blanco');
     font-size: 5em;
     animation-name: colorChangeTitle;
     animation-duration: 2s;
@@ -51,7 +55,7 @@
 }
 
 .main-subtitle{
-    color: $negro;
+    color: map-get($map: $paleta, $key: 'blanco');
     font-size: 3em;
 }
 
@@ -87,7 +91,8 @@
 }
 
 .card-text{
-    color: $blanco;
+    @extend .card-body;
+    font-size: 1em;
 }
 
 .boton-contacto{
